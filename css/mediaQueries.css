@@ -1,0 +1,62 @@
+
+@media only screen and (max-width: 600px)  {
+    /* Header */
+  .navbar{
+    position: relative;
+  }
+
+  .navbar .shopping {
+    display: none;
+  }
+
+  .navbar .menu-bar {
+    display: block;
+    grid-column: 8 / 9;
+    font-size: 2em;
+    cursor: pointer;
+  }
+
+  .navbar .menu{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 60px;
+    display: grid;
+    grid-column: 1 / 9;
+    align-items: center;
+    background-color: #edcb54;
+    display: none;
+  }
+
+  .navbar .menu li{
+    display: block;
+    font-size: 1.5em;
+    margin: 50px 50px;
+  }
+
+  .navbar .menu-toggle{
+    display: block;
+  }
+  /* Header ends */
+
+  /* Main */
+  .hero .info-content{
+      grid-column: 2 / 10;
+      grid-row: 3 / 8;
+  }
+
+  .hero h1{
+      font-size: 3em;
+  }
+  /* Main ends */
+
+  /* Footer */
+  .footer .follow-me{
+    display: none;
+  }
+
+  .footer .social-network{
+    text-align: center;
+  }
+  /* Footer ends */
+}

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header styles */
+.navbar{
+  background-color: #edcb54;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: center;
+}
+
+.logo{
+  width: 60px;
+  height: 60px;
+  grid-column: 2 / 3;
+}
+
+.navbar .menu{
+  grid-column: 4 / 7;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navbar .menu a{
+  text-decoration: none;
+  color: #181818;
+  cursor: pointer;
+}
+
+.navbar .menu a:hover{
+  color: #fff;
+}
+
+.navbar .menu-bar{
+  display: none;
+}
+
+.navbar .shopping {
+  grid-column: 8 / 9;
+  font-size: 1.5em;
+}
+
+/* Header styles ends */
+
+/* Main styles */
+
+.hero{
+  height: 86vh;
+  background-image: linear-gradient(rgba(16, 16, 16, .8), rgba(16, 16, 16, .8)), url(../img/ChriStern45.jpg);
+  background-size: cover;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.hero .info-content{
+  grid-column: 7 / 10;
+  grid-row: 3 / 7;
+  color: #fff;
+}
+
+.hero h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.hero h1{
+  font-size: 5em;
+  color: #edcb54;
+}
+
+.hero p{
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero .btn{
+  font-size: 1em;
+  background: none;
+  color: #fff;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: 1px solid #edcb54;
+  border-radius: 30px;
+}
+
+.hero .btn:hover{
+  background-color: #edcb54;
+  color: #181818;
+}
+
+.btn:focus{
+  outline: none;
+}
+
+/* Main styles ends */
+
+/* Footer styles */
+
+.footer{
+  position: absolute;
+  bottom: 0%;
+  display: grid;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  background-color: #181818;
+  color: #fff;
+  grid-template-areas: 
+  "listen-online follow-me social-network";
+}
+
+.footer .listen-online{
+  grid-template-areas: listen-online;
+  display: flex;
+  justify-content: center;
+  background: #edcb54;
+  padding: 25px;
+  color: #181818;
+}
+
+.footer .listen-online .fas{
+  font-size: 1.5em;
+  margin-right: 15px;
+}
+
+.footer .follow-me{
+  grid-template-areas: follow-me;
+  text-align: center;
+}
+
+.footer .social-network{
+  grid-template-areas: social-network;
+  font-size: 1.3em;
+}
+
+.footer .social-network .fab{
+  margin-right: 15px;
+  text-align: center;
+  color: #edcb54;
+}
+
+.footer .social-network .fab:hover{
+  color: #fff;
+}
+
+/* Footer styles ends */
